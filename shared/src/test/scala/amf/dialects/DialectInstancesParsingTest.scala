@@ -230,7 +230,7 @@ trait DialectInstancesParsingTest extends DialectTests {
     withDialect("dialect33.raml", "example33.raml", config.golden, VocabularyYamlHint, target = Amf, renderOptions = Some(config.renderOptions))
   }
 
-  multiGoldenTest("HERE_HERE parse 33b test", "example33b.%s") { config =>
+  multiGoldenTest("parse 33b test", "example33b.%s") { config =>
     withDialect("dialect33.raml", "example33b.raml", config.golden, VocabularyYamlHint, target = Amf, renderOptions = Some(config.renderOptions))
   }
 
@@ -437,7 +437,7 @@ trait DialectInstancesParsingTest extends DialectTests {
     withDialect("dialect33.raml", config.source, "example33b.raml", AmfJsonHint, target = Aml)
   }
 
-  multiSourceTest("HERE_HERE generate 34 test", "example34.%s") { config =>
+  multiSourceTest("generate 34 test", "example34.%s") { config =>
     withDialect("dialect34.raml", config.source, "example34.raml", AmfJsonHint, target = Aml)
   }
 
